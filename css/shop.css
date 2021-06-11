@@ -1,0 +1,85 @@
+.jumbotron {
+	background-color: #000;
+	background: url(https://hottdates.com/themes/hot/img/dynamic-banners/search_background_new.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 24px 0;
+	color: white;
+	-webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+#modalCheckout .modal-content {
+	background-color: #000;
+	color: white;
+	-webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+	min-height: 350px;
+	opacity: 0.95;
+	backdrop-filter: blur(08px);
+}
+
+.btn {
+	box-shadow: 0 2px #999;
+}
+
+.btn:active {
+	box-shadow: 0 1px #666;
+	transform: translateY(1px);
+}
+
+.prodPrecio,
+.prodQuant {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+#modalCheckout {
+	opacity: 0.95;
+	backdrop-filter: blur(10px);
+}
+
+.deleteProd {
+	position: absolute;
+	right: 1em;
+}
+
+#totalValue {
+	font-size: 2.5em;
+}
+
+.prodPrecio {
+	width: 55px !important;
+}
+.prodQuant {
+	width: 35px !important;
+}
+
+.catFilter {
+	cursor: pointer;
+}
+
+span.cartCounter:not(.badge) {
+	font-size: 1.8em;
+}
+
+.card-header .btn.focus,
+.card-header .btn:focus {
+	box-shadow: none !important;
+}
+
+.checkoutDetails {
+	background-color: #dc3546;
+	opacity: 0.8;
+	backdrop-filter: blur(10px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
