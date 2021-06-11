@@ -83,7 +83,7 @@ span.cartCounter:not(.badge) {
 	opacity: 0;
 }
 
-.card {
+footer .card {
 	background-color: #616161;
 	color: white;
 	margin-top: 50px;
