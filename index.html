@@ -16,6 +16,8 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+   <link rel="icon" type="image/ico" href="http://example.com/myicon.png">
+
    <title>Shop</title>
 </head>
 
@@ -55,11 +57,12 @@
       </div>
    </div>
    <div class="container">
+
       <!-- Inicio breacrumbs -->
-      <div class="row">
+      <div class="row no-gutters">
          <div class="col-md-12">
             <nav aria-label="breadcrumb">
-               <ol class="breadcrumb bg-light pl-0">
+               <ol class="breadcrumb">
                   <li class="breadcrumb-item">
                      <a href="#">Home</a>
                   </li>
@@ -71,7 +74,7 @@
          </div>
       </div>
 
-      <div class="row mt-3">
+      <div class="row mt-1 mx-0">
          <div class="jumbotron w-100 mb-2">
             <h1 class="display-5">Welcome to our shop</h1>
             <p class="lead">Here you can purchase products</p>
@@ -79,13 +82,14 @@
       </div>
 
       <!-- Avisos / Notificaciones -->
-      <div class="row">
+      <div class="row mx-0">
+
          <div class="col-12 d-flex justify-content-end mb-1 mt-2" id="alertArea">
             <div class="alert alert-danger w-100 text-center" style="display: none;" id="errorMessage" role="alert"
                style="display: none;">
             </div>
          </div>
-         <div class="col-12 text-center">
+         <div class="col-12 text-center px-0">
             <div class="alert alert-success" role="alert">Successful purchase<br><br>
                <a href="#" download class="btn btn-info" rel="tooltip" data-placement="top"
                   title="Click here to download your invoice">
@@ -95,39 +99,40 @@
          </div>
 
          <!-- Toolbar -->
-         <div class="row mb-3">
-            <div class="col-12 col-md-3 col-sm-12">
+         <div class="row mb-3 mx-0 w-100">
+            <div class="col-12 col-md-3 col-sm-12 px-0">
                <a class="btn btn-outline-danger btn-block" type="button" rel="tooltip" data-placement="top" href="#"
                   title="See and program your purchased products">
                   <i class="fas fa-sliders-h"></i>&nbsp;&nbsp;MANAGE YOUR PRODUCTS
                </a>
             </div>
-            <div class="col-12 col-md-9 col-sm-12">
+            <div class="col-12 col-md-9 col-sm-12 px-0">
                <div class="row d-flex no-gutters flex-row justify-content-end w-100 mt-2 mt-md-0">
                   <div class="col-2 col-md-1 mr-md-2 mt-1 mt-md-0">
                      <button class="btn btn-warning btn-block" style="display: none;" id="limpiarBusc"
                         onclick="clearFilter();$('#limpiarBusc').fadeOut();" data-toggle="tooltip" href="tooltip"
-                        data-placement="top" title="Clear search"><i class="fas fa-times-circle"></i></button>
+                        data-placement="top" title="Clear search"><i class="fas fa-times-circle"></i>
+                     </button>
                   </div>
                   <div class="col-10 col-md-4 mt-2 mt-md-0">
                      <input class="form-control" list="prodNames" id="searchBar" placeholder="Search"
                         onkeyup="searchProds()" aria-label="Search">
                      <datalist id="prodNames">
-                        <option value="LOREM">
-                        <option value="IPSUM">
-                        <option value="DOLOR">
-                        <option value="SITUS">
-                        <option value="AMETIS">
-                        <option value="ELITUS">
-                        <option value="SEDUS">
+                        <option value="LOREN">
+                        <option value="IPSUMS PRO 5000">
+                        <option value="IPSUMS PRO 2000">
+                        <option value="LOREN CORUS">
+                        <option value="IPSUMS PRO 3000">
+                        <option value="ELITUS SEDUS">
+                        <option value="SEDUS MAGNA">
                         <option value="LOREN MAX PRO 2000">
                         <option value="MAGNA TURBO X2000">
                         <option value="DOLOREX SUPREME MILLENIUM">
                      </datalist>
                   </div>
                   <div class="col-12 col-md-2 ml-md-2 mt-2 mt-md-0">
-                     <button class="btn btn-danger btn-block" href="tooltip" href="tooltip" data-placement="top"
-                        title="See your shopping cart" data-toggle="modal" data-target="#modalCheckout">
+                     <button class="btn btn-danger btn-block" href="tooltip" data-placement="top"
+                        title="See your shopping cart" onclick="$('#modalCheckout').modal('show');">
                         <i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;
                         <span class="badge badge-light cartCounter">0</span>
                      </button>
@@ -159,10 +164,10 @@
                               <span>Ipsums</span>
                            </p>
                            <p class="catFilter px-2"><i class="fas fa-box-open"></i>&nbsp;
-                              <span>Corus</span>
+                              <span>Sedus</span>
                            </p>
                            <p class="catFilter px-2"><i class="fas fa-box-open"></i>&nbsp;
-                              <span>Tensus</span>
+                              <span>Magna</span>
                            </p>
                         </div>
                      </div>
@@ -193,7 +198,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">LOREM</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">LOREN SENTIUS</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$5.99</h1>
@@ -215,7 +220,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">IPSUM</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">LOREN CORBUS</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$8.99</h1>
@@ -237,7 +242,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">DOLOR</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">IPSUMS PRO 5000</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$7.99</h1>
@@ -259,7 +264,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">SITUS</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">IPSUMS PRO 2000</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$3.99</h1>
@@ -281,7 +286,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">AMETIS</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">IPSUMS PRO 3000</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$12.99</h1>
@@ -303,7 +308,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">ELITUS</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">ELITUS SEDUS</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$11.99</h1>
@@ -325,7 +330,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">SEDUS</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">SEDUS MAGNA</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$5.99</h1>
@@ -391,7 +396,7 @@
                   <div class="col-md-4 prodItem">
                      <div class="card mb-4 shadow">
                         <div class="card-header bg-danger text-white">
-                           <h4 class="my-0 font-weight-bold text-center prodName">DOLOREX SUPREME MILLENIUM</h4>
+                           <h4 class="my-0 font-weight-bold text-center prodName">DOLOREX MAGNA MILLENIUM</h4>
                         </div>
                         <div class="card-body ">
                            <h1 class="card-title text-center">$14.99</h1>
@@ -531,12 +536,12 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
    </script>
-   <!-- Custom Js -->
-   <script src="js/shop.js"></script>
    <!-- BS Js -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
    </script>
+   <!-- Custom Js -->
+   <script src="js/shop.js"></script>
 </body>
 
 </html>
