@@ -3,4 +3,4 @@
 
 Here's a screenshot of the app:
 
-![Alt text](img/screenshot.jpg?raw=true "Simple JavaScript shopping cart")
+![plot](img/screenshot.jpg?raw=true "Simple JavaScript shopping cart")
