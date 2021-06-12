@@ -1,5 +1,7 @@
 # ShoppingCart
- This is a simple shopping cart made using basic HTML, CSS and JavaScript
+This is a simple shopping cart made using basic HTML, CSS and JavaScript
+
+You can check out a demo version of the app right ![here](https://saiuke.github.io/ShoppingCart/).
 
 Here's a screenshot of the app:
 
