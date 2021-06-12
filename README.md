@@ -3,4 +3,4 @@
 
 Here's a screenshot of the app:
 
-![plot](img/screenshot.jpg?raw=true "Simple JavaScript shopping cart")
+![Simple JavaScript shopping cart](./img/screenshot.jpg?raw=true "Simple JavaScript shopping cart")
